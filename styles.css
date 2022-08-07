@@ -50,7 +50,69 @@ table {
 
 body{
     background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
 }
 #logoAlura{
     margin: 1rem;
+}
+
+.textInput > input{
+    border: none;
+    background-color: transparent;
+    width: 80%;
+    margin: 1em 10% 90% 10%;
+    font-weight: 900;
+    font-size: 2em;
+    font-family: 'Inter', sans-serif;
+    line-height: 150%;
+    color: #0A3871;
+}
+.medio{
+    margin: 1.2em;
+}
+.medio p {
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 150%;
+    color: #495057;
+
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+.botones button{
+    background-color: #0A3871;
+    border-radius: 24px;
+    color: white;
+    padding: 1rem;
+    width: 40%;
+    border: none;
+}
+#btn2{
+    background-color: transparent;
+    border: 1px solid;
+    color: #0A3871;
+}
+.cajaTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    color: #343A40;
+    margin: 2em 2em;
+    height: 10em;
+}
+.cajaTexto > h3{
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 120%;
+    margin: 2rem 1rem 0.8em;
+}
+.cajaTexto > p{
+    text-align: center
 }
