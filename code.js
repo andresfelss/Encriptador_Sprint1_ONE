@@ -35,6 +35,10 @@ btnEncriptar.addEventListener("click", ()=>{
         cajaTexto.innerHTML = "Mensaje Encriptado";
         cajaTexto2.innerHTML = encriptar(miTexto.value);
         miMuneco.style.display = "none";
+    }else{
+        miMuneco.style.display = "block";
+        cajaTexto.innerHTML = "Ningun mensaje fue encontrado";
+        cajaTexto2.innerHTML = "Ingrese el texto que desee encriptar o desencriptar";
     }
 
 },false)
@@ -45,6 +49,9 @@ btnDesEncriptar.addEventListener("click", ()=>{
         cajaTexto.innerHTML = "Mensaje Desencriptado";
         cajaTexto2.innerHTML = desEncriptar(cajaTexto2.innerHTML);
         miMuneco.style.display = "none";
+    }else{
+        miMuneco.style.display = "block";
+        cajaTexto.innerHTML = "Ningun mensaje fue encontrado";
     }
 
 },false)
