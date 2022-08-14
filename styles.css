@@ -131,3 +131,33 @@ html,body{
 .cajaTexto > p{
     text-align: center
 }
+.muneco{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    main{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cajaTexto{
+        min-height: 80vh;
+        min-width: 70vh;
+        align-self: stretch;
+        
+    }
+    .medio{
+        align-self: flex-end;
+        position: absolute;
+        left: 20vh;
+        width: 40%;
+    }
+    .caja{
+        padding-left: 20vh;
+    }
+    .muneco{
+        display: block;
+        margin: 3rem;
+    }
+}
