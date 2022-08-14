@@ -57,6 +57,11 @@ html,body{
     background-color: #F3F5FC;
     font-family: 'Inter', sans-serif;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cajaTexto::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
 #logoAlura{
     margin: 1rem;
 }
@@ -101,7 +106,7 @@ html,body{
     border: none;
 }
 #desencript{
-    background-color: transparent;
+    background-color: #D8DFE8;
     color: #0A3871;
     border: 1px solid;
 }
@@ -120,6 +125,11 @@ html,body{
     color: #343A40;
     margin: 2em 2em;
     height: 10em;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-y: scroll;
+
 }
 .cajaTexto > h3{
     font-weight: 900;
@@ -129,7 +139,10 @@ html,body{
     margin: 2rem 1rem 0.8em;
 }
 .cajaTexto > p{
-    text-align: center
+    text-align: center;
+    max-width: 80%;
+    height: 100%;
+    margin: 1em;
 }
 .muneco{
     display: none;
@@ -142,10 +155,10 @@ html,body{
         justify-content: space-between;
     }
     .cajaTexto{
-        min-height: 80vh;
-        min-width: 70vh;
-        align-self: stretch;
-        
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        width: 70vh;
     }
     .medio{
         align-self: flex-end;
